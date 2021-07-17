@@ -1,0 +1,20 @@
+.profile__add-button {
+    min-width: 150px;
+    height: 50px;
+    padding: 0;
+    background-image: url(./Vectoradd.svg);
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: center;
+    border: 2px #fff solid;
+    justify-self: flex-end;
+    margin-left: 244px;
+    /*flex-grow: 1;*/
+}
+
+@media screen and (max-width: 880px) {
+    .profile__add-button {
+        margin: 36px auto 0;
+        min-width: 100%;
+    }
+}

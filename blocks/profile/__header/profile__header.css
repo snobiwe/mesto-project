@@ -1,0 +1,12 @@
+.profile__header {
+    display: flex;
+}
+
+@media screen and (max-width: 880px) {
+    .profile__header {
+        justify-self: center;
+        justify-content: center;
+        max-width: 217px;
+        margin: 0 auto;
+    }
+}

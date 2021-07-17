@@ -1,0 +1,19 @@
+.table__button {
+    background-image: url(./heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    min-width: 22px;
+}
+
+.table__button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.table__button:active {
+    background-image: url(./Union.png);
+    opacity: 100%;
+}

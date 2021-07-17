@@ -1,0 +1,14 @@
+.table__title {
+    max-width: 246px;
+    line-height: 23px;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 25px auto 21px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-self: flex-end;
+    
+}

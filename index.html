@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto Russia</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/index.css">
+ 
+</head>
+<body>
+    <div class="page">
+        <header class="header page__header">
+           <img class="header__logo" alt="Логотип Mesto Russia" src="./images/Vector.svg">
+           <div class="header__line"></div>
+        </header>
+        <main>
+            <section class="profile page__section">
+                <div class="profile__image"></div>
+                    <div class="profile__info">
+                        <div class="profile__header"><p class="profile__name">Жак-Ив Кусто</p><button class="profile__edit-button"></button></div>
+                        <p class="profile__subscription">Исследователь океана</p>
+                    </div>
+                    <button class="profile__add-button"></button>
+                    <div class="popup popup_opened">
+                        
+                        <form class="popup__container">
+                            <button class="popup__close"></button>
+                            <p class="popup__title">Редактировать профиль</p>
+                            <fieldset class="popup__profile-edit">
+                                <p class="popup__field"><input type="text" name="firstname" placeholder="Жак-Ив Кусто" class="popup__input"></p>
+                                <div class="popup__line"></div>
+                                <p class="popup__field"><input type="text" name="subscription" placeholder="Исследователь океана" class="popup__input"></p>
+                                <div class="popup__line"></div>
+                            </fieldset>
+                            <button class="popup__apply"><p class="popup__save">Сохранить</p></button>
+
+                        </form>
+                    </div>
+            </section>
+            <section class="table page__table">
+                <ul class="table__list">
+                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1088404-unsplash_1.png" alt="Карачаевск"><p class="table__title">Карачаевск<button class="table__button"></button></p></li>
+                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1404681-unsplash_2.png" alt="Гора Эльбрус"><p class="table__title">Гора Эльбрус<button class="table__button"></button></p></li>
+                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1556355-unsplash_3.png" alt="Домбай"><p class="table__title">Домбай<button class="table__button"></button></p></li>
+                    <li class="table__element"><img class="table__image" src="./images/LastGnezdo.png" alt="Ласточкино гнездо"><p class="table__title">Крым<button class="table__button"></button></p></li>
+                    <li class="table__element"><img class="table__image" src="./images/Kazan.png" alt="Казань"><p class="table__title">Казань<button class="table__button"></button></p></li>
+                    <li class="table__element"><img class="table__image" src="./images/Vladimir.png" alt="Владимир"><p class="table__title">Владимир<button class="table__button"></button></p></li>
+                </ul>
+            </section>
+
+        </main>
+        <footer class="footer page__footer">
+            <p class="footer__copyright">&copy; Mesto Russia</p>
+        </footer>
+    </div>
+</body>

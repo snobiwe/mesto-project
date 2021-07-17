@@ -19,3 +19,4 @@
 ### Инструкция
 Для просмотра проекта необходим браузер, использовались HTML и CSS
 
+[Ссылка на проект в GitHubPages](https://snobiwe.github.io/mesto-project/)

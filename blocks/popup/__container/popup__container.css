@@ -1,9 +1,10 @@
 .popup__container {
     border: none;
-    
+    display: flex;
+    justify-content: center;
     background-color: #fff;
     border-radius: 10px;
-    max-width: 430px;
+    width: 430px;
     
     align-self: center;
     justify-self: center;
@@ -16,8 +17,8 @@
     .popup__container {
         
         
-        max-height: 322px;
-        min-width: 282px;
+        
+        width: 282px;
         
     }
 }

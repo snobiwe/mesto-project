@@ -9,6 +9,8 @@
     opacity: 100%;
     border-bottom: 1px rgba(0, 0, 0, 20%) solid;
     padding-bottom: 13px;
+    margin: 54px auto 0;
+   
 }
 
 .popup__input::-webkit-input-placeholder {

@@ -1,5 +1,6 @@
 .popup__profile-edit {
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 238px;
 }

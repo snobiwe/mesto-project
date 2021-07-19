@@ -9,7 +9,12 @@
     border: 2px #fff solid;
     justify-self: flex-end;
     margin-left: 244px;
-    /*flex-grow: 1;*/
+    border-radius: 2px;
+}
+
+.profile__add-button:hover {
+    opacity: 60%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 880px) {

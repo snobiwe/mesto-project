@@ -1,0 +1,7 @@
+.table__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 246px;
+    margin: 0 0 0 15px;
+    
+}

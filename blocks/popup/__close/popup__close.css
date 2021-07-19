@@ -9,21 +9,21 @@
     background-position: center;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
-    right: -38px;
     top: -38px;
+    right: -38px;
 }
 
 .popup__close:hover {
-    opacity: 80%;
+    opacity: 60%;
     cursor: pointer;
 }
 
 
 @media screen and (max-width: 880px) {
     .popup__close {
-        min-width: 28px;
-        min-height: 28px;
-        right: 5px;
-        top: -38px;
+        min-width: 20px;
+        min-height: 20px;
+        right: 0px;
+        top: -30px;
     }
 }

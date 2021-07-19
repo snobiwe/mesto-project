@@ -20,12 +20,14 @@
 @import url(../blocks/table/__list/table__list.css);
 @import url(../blocks/table/__element/table__element.css);
 @import url(../blocks/table/__image/table__image.css);
+@import url(../blocks/table/__header/table__header.css);
 @import url(../blocks/table/__title/table__title.css);
 @import url(../blocks/table/__button/table__button.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__form/poup__form.css);
 @import url(../blocks/popup/__profile-edit/popup__profile-edit.css);
 @import url(../blocks/popup/__field/popup__field.css);
 @import url(../blocks/popup/__input/popup__input.css);

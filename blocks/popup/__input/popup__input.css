@@ -2,15 +2,19 @@
     border: none;
     opacity: 20%;
     width: 358px;
-    max-height: 27px;
-    line-height: 14px;
-    font-size: 14px;
+    max-height: 14px;
+    line-height: 10px;
+    font-size: 10.5px;
     padding: 0;
     opacity: 100%;
     border-bottom: 1px rgba(0, 0, 0, 20%) solid;
     padding-bottom: 13px;
     margin: 54px auto 0;
    
+}
+
+.popup__input:last-child{
+    margin: 30px auto 0;
 }
 
 .popup__input::-webkit-input-placeholder {

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проект "Место"</title>
   <link rel="stylesheet" href="./styles/index.css">
- 
+  
 </head>
 <body>
     <div class="page">
@@ -23,31 +23,57 @@
                     <button type="button" class="profile__add-button"></button>
                    
             </section>
-            <div class="popup">
-                        
+            <div class="popup edit">     
                 <div class="popup__container">
                     <form class="popup__form" name="submit">
                     <button type="button" class="popup__close"></button>
                     <h2 class="popup__title">Редактировать профиль</h2>
                     <fieldset class="popup__profile-edit">
-                        <input type="text" name="firstname" placeholder="Жак-Ив Кусто" class="popup__input">
+                        <input type="text" name="firstname" placeholder="Жак-Ив Кусто" class="popup__input name_input" required>
                         
-                        <input type="text" name="subscription" placeholder="Исследователь океана" class="popup__input">
+                        <input type="text" name="subscription" placeholder="Исследователь океана" class="popup__input job_input" required>
                         
                     </fieldset>
                     <button type="submit" class="popup__apply popup__save">Сохранить</button>
                 </form>
                 </div>
-            
             </div>
+
+            <div class="popup add">     
+                <div class="popup__container">
+                    <form class="popup__form card-form" name="submit">
+                    <button type="button" class="popup__close"></button>
+                    <h2 class="popup__title">Новое место</h2>
+                    <fieldset class="popup__profile-edit">
+                        <input type="text" name="firstname" placeholder="Название" class="popup__input title_input" required>
+                        
+                        <input type="text" name="subscription" placeholder="Ссылка на картинку" class="popup__input link_input" required>
+                        
+                    </fieldset>
+                    <button type="submit" class="popup__apply popup__save">Создать</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="popup card popup_opened">     
+                <figure class="popup__container">
+                   <img class="popup__image" alt="#">
+                    <figcaption class="popup__caption"></figcaption>
+                </figure>
+            </div>
+
             <section class="table page__table">
                 <ul class="table__list">
-                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1088404-unsplash_1.png" alt="Карачаевск"><div class="table__header"><h2 class="table__title">Карачаевск</h2><button type="button" class="table__button"></button></div></li>
-                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1404681-unsplash_2.png" alt="Гора Эльбрус"><div class="table__header"><h2 class="table__title">Гора Эльбрус</h2><button type="button" class="table__button"></button></div></li>
-                    <li class="table__element"><img class="table__image" src="./images/kirill-pershin-1556355-unsplash_3.png" alt="Домбай"><div class="table__header"><h2 class="table__title">Домбай</h2><button type="button" class="table__button"></button></div></li>
-                    <li class="table__element"><img class="table__image" src="./images/LastGnezdo.png" alt="Ласточкино гнездо"><div class="table__header"><h2 class="table__title">Крым</h2><button type="button" class="table__button"></button></div></li>
-                    <li class="table__element"><img class="table__image" src="./images/Kazan.png" alt="Казань"><div class="table__header"><h2 class="table__title">Казань</h2><button type="button" class="table__button"></button></div></li>
-                    <li class="table__element"><img class="table__image" src="./images/Vladimir.png" alt="Владимир"><div class="table__header"><h2 class="table__title">Владимир</h2><button type="button" class="table__button"></button></div></li>
+                    <template class="table-template">
+                        <li class="table__element">
+                            <img class="table__image" alt="Изображение">
+                            <div class="table__header">
+                                <h2 class="table__title"></h2>
+                                <button type="button" class="table__button"></button>
+                                <button class="table__delete"></button>
+                            </div>
+                        </li>
+                    </template>
                 </ul>
             </section>
 
@@ -56,4 +82,5 @@
             <p class="footer__copyright">&copy; Mesto Russia</p>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>

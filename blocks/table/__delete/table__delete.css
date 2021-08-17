@@ -1,8 +1,8 @@
-.table__button {
-    background-image: url(./heart.svg);
+.table__delete {
+    background-image: url(./GroupDelete.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     padding: 0;
     min-width: 22px;
@@ -10,11 +10,11 @@
     margin: 0;
     position: absolute;
     right: 0px;
-    top: 20px;
+    top: -270px;
 }
 
-.table__button:hover {
+.table__delete:hover {
     opacity: 50%;
     cursor: pointer;
+    
 }
-

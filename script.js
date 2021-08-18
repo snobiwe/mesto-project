@@ -1,6 +1,6 @@
 const popupEdit = document.querySelector('.edit')
 const popupAdd = document.querySelector('.add')
-
+const popupCard = document.querySelector('.card')
 
 function popupOpen (popupName) {
     popupName.classList.add('popup_opened')
@@ -99,6 +99,14 @@ function createCard(cardData) {
   cardElement.querySelector('.table__title').textContent = cardData.name;
   cardImage.setAttribute('src', cardData.link);
   cardImage.setAttribute('alt', cardData.name);
+
+  const popupCaption = popupCard.querySelector('.popup__caption')
+  const popupImage = popupCard.querySelector('.popup__image')
+  cardImage.addEventListener('click', () => {
+    popupImage.src = cardImage.src;
+    popupCaption.textContent = cardName.textContent;
+    popupOpen(popupCard)
+  })
   
   cardElement.querySelector('.table__button').addEventListener('click', (evt) => evt.target.classList.toggle('table__button_active'))
   cardElement.querySelector('.table__delete').addEventListener('click', function (evt) {evt.target.closest('.table__element').remove()})

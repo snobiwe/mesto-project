@@ -83,6 +83,7 @@ function createCard(cardData) {
   cardImage.addEventListener('click', () => {
     popupImage.src = cardImage.src;
     popupCaption.textContent = cardName.textContent;
+    popupImage.alt = cardName.textContent;
     popupOpen(popupCard)
   })
   
@@ -95,7 +96,6 @@ function addCard(cardData, container){
   const card = createCard(cardData);
   container.prepend(card)
 }
-
 
 
 formElement.addEventListener('submit', formSubmitHandler);
